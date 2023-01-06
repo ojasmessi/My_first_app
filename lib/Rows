@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(
+      MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('My first app'),
+            centerTitle: true,
+          ),
+          body: Row(
+            children: [
+              Text('Hello ojas!'),
+              FlatButton(
+                onPressed: () {},
+                child: Text('click me'),
+                color: Colors.amber,
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.deepPurple,
+                child: Text('inside container'),
+                margin: EdgeInsets.all(20.0),
+              ),
+            ],
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: null,
+            child: Text('click'),
+          ),
+        ),
+      ),
+    );
