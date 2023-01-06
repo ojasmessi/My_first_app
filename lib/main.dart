@@ -1,41 +1,43 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
+void main() => runApp(
+      MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('My first app'),
+            centerTitle: true,
+          ),
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                children: [
+                  Text('data'),
+                  Text('data'),
+                ],
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.amber,
+                child: Text('one'),
+              ),
+              Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.red,
+                child: Text('two'),
+              ),
+              Container(
+                padding: EdgeInsets.all(40.0),
+                color: Colors.cyan,
+                child: Text('three'),
+              ),
+            ],
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: null,
+            child: Text('click'),
+          ),
         ),
       ),
     );
-  }
-}
