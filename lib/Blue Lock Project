@@ -1,0 +1,94 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(
+      MaterialApp(
+        home: Scaffold(
+          backgroundColor: Colors.grey[900],
+          appBar: AppBar(
+            title: Text('Blue Lock'),
+            centerTitle: true,
+            backgroundColor: Colors.cyan[600],
+            elevation: 0.0,
+          ),
+          body: Padding(
+            padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/61cc477c-56bf-4f67-9bec-c2b42e0fc46e/dfhefl1-aa9ddc36-e644-4420-b7ea-47a33a2a3490.jpg/v1/fill/w_269,h_350,q_70,strp/isagi_yoichi_by_venoku_art_dfhefl1-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY2NCIsInBhdGgiOiJcL2ZcLzYxY2M0NzdjLTU2YmYtNGY2Ny05YmVjLWMyYjQyZTBmYzQ2ZVwvZGZoZWZsMS1hYTlkZGMzNi1lNjQ0LTQ0MjAtYjdlYS00N2EzM2EyYTM0OTAuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sJXIRteNbuc9Od7JpZ1QW3r8sLvw_wF6xwzaNIGc9jU'),
+                    radius: 60.0,
+                  ),
+                ),
+                Divider(
+                  height: 60.0,
+                  color: Colors.grey[800],
+                ),
+                Text(
+                  'NAME',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    letterSpacing: 2.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Text(
+                  'Isagi Yoichi',
+                  style: TextStyle(
+                    color: Colors.amberAccent[200],
+                    letterSpacing: 2.0,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 30.0),
+                Text(
+                  'CURRENT SOCCER LEVEL',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    letterSpacing: 2.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Text(
+                  '9',
+                  style: TextStyle(
+                    color: Colors.amberAccent[200],
+                    letterSpacing: 2.0,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 30.0),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.mail,
+                      color: Colors.grey[350],
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      'isagiyoichi@reddit.com',
+                      style: TextStyle(
+                        color: Colors.amberAccent[400],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.cyan[600],
+            onPressed: null,
+            child: Text('click'),
+          ),
+        ),
+      ),
+    );
