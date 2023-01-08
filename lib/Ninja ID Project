@@ -18,7 +18,7 @@ void main() => runApp(
                 Center(
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
-                        'https://wallpaper.dog/large/20510570.jpg'),
+                        'https://images5.alphacoders.com/532/532559.jpg'),
                     radius: 60.0,
                   ),
                 ),
