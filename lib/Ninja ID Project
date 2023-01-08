@@ -15,6 +15,17 @@ void main() => runApp(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Center(
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        'https://wallpaper.dog/large/20510570.jpg'),
+                    radius: 60.0,
+                  ),
+                ),
+                Divider(
+                  height: 60.0,
+                  color: Colors.grey[800],
+                ),
                 Text(
                   'NAME',
                   style: TextStyle(
@@ -56,8 +67,8 @@ void main() => runApp(
                 Row(
                   children: [
                     Icon(
-                      Icons.email,
-                      color: Colors.grey[400],
+                      Icons.mail,
+                      color: Colors.grey[350],
                     ),
                     SizedBox(width: 10.0),
                     Text(
